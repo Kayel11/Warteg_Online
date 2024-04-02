@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warteg Sederhana</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="warteg.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-utensils mr-2"></i> <!-- Ikon di sini -->
+        Warteg Sederhana
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="user.html">Login</a> <!-- Menghubungkan ke halaman login -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user.html">Signup</a> <!-- Menghubungkan ke halaman signup -->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="far fa-user-circle"></i> <!-- Icon bulat -->
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="btn-group mb-3" role="group" aria-label="Menu">
+    <button type="button" class="btn btn-secondary menu-btn" data-menu="food">Makanan</button>
+    <button type="button" class="btn btn-secondary menu-btn" data-menu="drink">Minuman</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div id="products">
+        <!-- Produk Makanan -->
+        <div class="food-products">
+          <div class="card">
+            <img src="product1.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Goreng</h5>
+              <p class="card-text">Nasi yang digoreng dengan bumbu khas disajikan dengan telur mata sapi, irisan mentimun, dan kerupuk.</p>
+              <p class="card-text">Price: Rp.15.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product1" data-menu="drink">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product2.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Goreng</h5>
+              <p class="card-text">Potongan ayam yang digoreng renyah dan gurih.</p>
+              <p class="card-text">Price: Rp.10.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product2" data-menu="drink">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product3.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Sayur Lengkap</h5>
+              <p class="card-text">Sayuran berkuah dengan berbagai pilihan, seperti sayur asem, sayur lodeh, atau sayur sop.</p>
+              <p class="card-text">Price: Rp.7.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product3" data-menu="drink">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product4.jpg" class="card-img-top" alt="Product 4">
+            <div class="card-body">
+              <h5 class="card-title">Ikan Bakar/Goreng</h5>
+              <p class="card-text"> Ikan yang dibakar atau digoreng dan disajikan dengan sambal Matah.</p>
+              <p class="card-text">Price: Rp.20.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product1" data-menu="drink">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product5.jpg" class="card-img-top" alt="Product 5">
+            <div class="card-body">
+              <h5 class="card-title">Lalapan & Tahu Tempe</h5>
+              <p class="card-text">Potongan tahu atau tempe yang digoreng hingga renyahdan juga lalapan.</p>
+              <p class="card-text">Price: Rp.5.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product5" data-menu="drink">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product6.jpg" class="card-img-top" alt="Product 6">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Putih</h5>
+              <p class="card-text">Nasi yang disajikan Pulen.</p>
+              <p class="card-text">Price: Rp.8.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product6" data-menu="drink">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk Minuman -->
+        <div class="drink-products">
+          <div class="card">
+            <img src="product7.jpg" class="card-img-top" alt="Product 7">
+            <div class="card-body">
+              <h5 class="card-title">Air putih Sundanese</h5>
+              <p class="card-text">Air mineral segar untuk menemani hidangan Anda.</p>
+              <p class="card-text">Price: Rp.4.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product7" data-menu="food">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product8.jpg" class="card-img-top" alt="Product 8">
+            <div class="card-body">
+              <h5 class="card-title">Teh Ambon Manise</h5>
+              <p class="card-text">Teh dingin yang menyegarkan, tersedia dalam pilihan manis atau tidak.</p>
+              <p class="card-text">Price: Rp.6.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product2" data-menu="food">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product9.jpg" class="card-img-top" alt="Product 9">
+            <div class="card-body">
+              <h5 class="card-title">Es Jeruk Jawa Kepolen</h5>
+              <p class="card-text">Es jeruk segar dengan potongan buah jeruk yang segar langsung dari Brazil.</p>
+              <p class="card-text">Price: Rp.10.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product9" data-menu="food">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="product10.jpeg" class="card-img-top" alt="Product 10">
+            <div class="card-body">
+              <h5 class="card-title">Kopi Ngawi</h5>
+              <p class="card-text">Kopi hitam atau kopi susu panas untuk memulai hari Anda dengan semangat, kopi dari Italy.</p>
+              <p class="card-text">Price: Rp.20.000</p>
+              <button class="btn btn-primary add-to-cart" data-product="product10" data-menu="food">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="cart">
+        <h5>Shopping Cart <i class="fas fa-shopping-cart"></i></h5>
+        <ul class="list-group">
+          <!-- Add more cart items here -->
+        </ul>
+        <div class="text-right mt-3">
+          <button class="btn btn-success" id="checkoutBtn">Checkout</button>
+        </div>
+        <hr> <!-- Adding a horizontal line for separation -->
+        <div id="cart-total">
+          <p>Pajak: <span id="tax">$0</span></p>
+          <p>Diskon: <span id="discount">$0</span></p>
+          <p>Subtotal: <span id="subtotal">$0</span></p>
+          <p>Total Harga: <span id="total-price">$0</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <h5><i class="fas fa-info-circle"></i> Tentang Kami</h5>
+        <p>Warteg Sederhana adalah sebuah restoran warung tegal yang menyajikan berbagai macam masakan Indonesia dengan cita rasa yang otentik. Kami berdiri sejak tahun 2010 
+        dan telah menjadi salah satu tempat makan favorit bagi masyarakat sekitar.</p>
+      </div>
+      <div class="col-md-4">
+        <h5><i class="fas fa-phone"></i> Kontak</h5>
+        <p>Email: warungsederhana@gmail.com<br>Phone: 123-456-7890</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Ikuti Kami</h5>
+        <a href="#"><i class="fab fa-facebook-f fa-lg text-white mr-2"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-lg text-white"></i></a>
+      </div>
+    </div>
+    <hr> <!-- Adding a horizontal line for separation -->
+    <p>&copy; 2024 Warteg Sederhana</p>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="warteg.js"></script>
+</body>
+</html>

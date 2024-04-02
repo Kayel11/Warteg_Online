@@ -1,0 +1,112 @@
+/* Custom CSS for Warteg Sederhana */
+
+body {
+    background-color: #f5f5f5; /* Light gray background */
+    overflow-y: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Increase font size of the navbar brand */
+    color: #333; /* Dark gray color for the navbar brand */
+}
+
+.card {
+    margin-bottom: 30px; /* Add some space between product cards */
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+#cart {
+    background-color: #fff; /* White background for the shopping cart */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Dark gray background for footer */
+    padding: 20px; /* Padding for footer */
+    text-align: center;
+    color: #fff; /* White text for footer */
+}
+
+/* Header and Footer Links */
+.navbar-nav .nav-link,
+.footer .nav-link {
+    color: #fff; /* White color for links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover,
+.footer .nav-link:hover {
+    color: #ccc; /* Light gray color on hover */
+}
+
+/* Product Title */
+.card-title {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray color for product title */
+}
+
+/* Product Price */
+.card-text {
+    color: #555; /* Gray color for product price */
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #007bff; /* Blue color for add to cart button */
+    border: none;
+    color: #fff; /* White color for text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-right: 15px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    color: #fff; /* White color for icons */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    color: #ccc; /* Light gray color on hover */
+}
+.card {
+    margin-bottom: 20px; /* add some space between product cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add shadow effect */
+    transition: box-shadow 0.3s ease; /* add smooth transition */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* increase shadow on hover */
+}
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease; /* add smooth transition */
+}
+
+.btn:hover {
+    background-color: #007bff; /* change background color on hover */
+    color: #fff; /* change text color on hover */
+}
+.card {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* add shadow effect */
+}
+
