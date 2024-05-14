@@ -1,7 +1,8 @@
 /* Custom CSS for Warteg Sederhana */
 
 body {
-    background-color: #f5f5f5; /* Light gray background */
+    background: rgb(116,116,129);
+    background: linear-gradient(90deg, rgba(116,116,129,1) 8%, rgba(89,87,105,1) 54%, rgba(29,37,38,1) 76%); 
     overflow-y: auto;
     min-height: 100vh;
     display: flex;
